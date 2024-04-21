@@ -26,78 +26,22 @@ body {
   color: var(--text-color)
 }
 
-nav {
 
-  background-color:white;
-  display: flex;
-  color: black;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  
 
-}
 
-ul {
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  flex-wrap: wrap;
 
-}
 
-li {
-  list-style: none;
-  padding: 5px ;
-  margin: 6px 30px;
-  /* font-style: italic; */
-  font-weight:750;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-transform:capitalize;
-  letter-spacing: 2px;
-  font-size: 18px;
-
-}
 
 /* login button */
-.loginbtn
-{
-  background-color: rgb(35, 153, 35);
-  /* border: none; */
-  border-radius: 2rem;
-  border: 1px solid rgb(15, 161, 15);
-  width: 130px;
-  height: 40px;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
 
-}
 
-.loginbtn:hover{
-  background-color: black;
-  transition-delay:110ms ;
 
-}
-
-.navopt:hover{
-  color: rgb(123, 201, 5);
-}
 
 a{
   /* margin:6px 90px; */
 }
 
-nav ul li a {
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--text-color);
-}
+
 
 /* nav ul li :hover {
   background-color: aliceblue;
@@ -106,14 +50,7 @@ nav ul li a {
   border-radius: 10px;
 } */
 
-.logo {
-  background: url('./image/logo.png')no-repeat center center/cover;
-  width: 200px;
-  height: 61px;
-  position: relative;
-  left: 0px;
-  top: 0px;
-}
+
 
 header::before {
   content: "";
@@ -125,8 +62,8 @@ header::before {
 
   width: 100%;
   height: 756px;
-
-  background: url('./image/precious-madubuike-N2Td7KpIvYc-unsplash.jpg') no-repeat center center/cover;
+/* background:linear-gradient(to right,green,black); */
+  background: url('./image/slider-mainbg-006.png') no-repeat center center/cover;
   z-index: -1;
   
   background-color: rgba(0,0,0,.5);
@@ -187,16 +124,18 @@ header div {
 .aboveheader{
   width: 880px;
   height: 400px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   position: absolute;
-  left: 100px;
+  left: 50px;
   top: 170px;
 color: white;
+background:rgb(14, 68, 86);
+/* opacity:0.5; */
 
 
 }
 
-.aboveheadtext
+/* .aboveheadtext
 {
   letter-spacing: 1px;
   font-size: 5rem;
@@ -204,6 +143,24 @@ color: white;
   display: block;
   font-weight: 680;
   text-align: left;
+} */
+
+.aboveheadtext
+{
+  font-size: 100px;
+  font-weight: 900;
+/* background-image: url('data:image/jpeg;base64,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'); */
+/* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-m5CxLlxIh6Z-O4kY_HsONZR8tOrpYgCdKps67EaWxA&s'); */
+/* background-image: url(./image/slider-mainbg-006.png); */
+background-size: cover;
+  background-clip: text;
+  background-position: center;
+  color:black;
+
+}
+.elexio{
+  margin-left: 00;
+  color: greenyellow;
 }
 
 
@@ -227,8 +184,8 @@ color: white;
   align-items: center;
   flex-wrap: wrap;
   border: 2px solid var(--box-color);
-  height: 450px;
-  width: 280px;
+  height: 200px;
+  width: 380px;
   margin: 100px 42px;
   padding: 22px 12px;
   color: var(--text-color);
@@ -309,120 +266,34 @@ h3 {
   border-radius: 20px;
   box-shadow: 20px 10px 50px 2px var(--box-color), 20px 10px 50px 2px var(--box-shadw);
 }
-
-
-
-
-.clients {
-  display: flex;
-  justify-content: start;
-  width: 100vw;
-  height: 100vh;
-
-  background: url('../images/clients.png')no-repeat center center/cover;
-  opacity: .9;
+slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.contact::before {
-  content: "";
-
+.slider-images {
   display: flex;
-  justify-content: flex-end;
-  align-items: end;
-  /* position: absolute; */
-  /* flex-wrap: wrap; */
-  width: 100vw;
-  height: 100vh;
-  background: url('../images/contact us.png')no-repeat center center/cover;
-  opacity: 1;
-  z-index: -1;
+  transition: transform 0.5s ease-in-out;
 }
 
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.slider-images img {
+  width: 100%;
+}
+.slider-buttons {
   position: absolute;
-  overflow: hidden;
-
-}
-
-.input {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
   display: flex;
-  position: absolute;
-  /* top: 1102px; */
-  height: 100vh;
-  width: 100vw;
-  /* flex-wrap: wrap; */
-  /* border: 2px solid red; */
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 4rem;
-  font-weight: bold;
-  font-style: italic;
-
+  justify-content: space-between;
 }
 
-input {
-  display: inline-block;
-  margin: 7px 418px;
-  width: 358px;
-  height: 70px;
-  padding: 11px 11px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  /* color: var(--text-color2); */
-  font-size: 20px;
-  font-style: italic;
-  font-weight: bold;
-  border-radius: 10px;
-  background-color: rgb(250, 186, 195);
-  color: var(--text-color);
-  border: 2px solid rgb(231, 152, 165);
-  box-shadow: 10px 10px 20px 1px rgb(231, 152, 165);
-  cursor: pointer;
-}
-
-input:hover {
-  border-radius: 25px;
-
-
-}
-
-input[type=text]:focus {
+.slider-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   border: none;
-
-}
-
-
-
-@media (min-width:250px) and (max-width:460px) {
-  .input {
-      width: 100vw;
-  }
-
-  header div {
-      height: fit-content;
-      position: absolute;
-      bottom: 60px;
-
-  }
-
-}
-
-@media (max-width:400px) {
-  .input {
-      width: 100vw;
-  }
-
-  header div {
-      height: min-content;
-      position: absolute;
-      margin: 15px 2px;
-      bottom: -1px;
-
-  }
-
+  cursor: pointer;
+  padding: 10px;
 }
